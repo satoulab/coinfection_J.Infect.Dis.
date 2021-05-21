@@ -1,0 +1,21 @@
+###########################################################
+###                                                     ###
+###            HISTONE MODIFICATION ANALYSIS            ###
+###                                                     ###
+###########################################################
+
+1. Make a new folder and put the whole "SCRIPT" folder into the new folder
+
+2. In the same folder, make a folder named "IS_DATA" and put the BED files of integration site data into it
+
+3. Edit the "IS_sample_list.txt" file in the "SCRIPT" folder to include all the BED files placed into the "IS_DATA" folder
+
+4. Run the "01_batch_prepare.sh" script file
+
+5. Once it is completed, check that the following new folders & files are generated:
+		a) chip_data/histone
+		b) SCRIPT/cd4t_histone_list.txt
+		
+6. For comparison of integration sites in relation to histone marks between samples, run the "02_batch_comparison_repair.sh" script file
+
+7. For enrichment analysis of IS in relation to histone marks, run the "03_batch_calc_enrichment_for_random_expectation.sh" script file
